@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0rem 1rem;
     background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
@@ -18,8 +18,8 @@
     align-items: center;
 
     img {
-        width:60px;
-        height: 50px;
+        width:90px;
+        height: 80px;
         
         @media screen and (min-width: 2000px){ //Media queries in specific element
             width:  180px;
@@ -31,12 +31,12 @@
 .app__navbar-links{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
     list-style: none;
+
     li {
-        margin: 0 1rem;
+        margin: 0 2rem;
         cursor: pointer; 
         flex-direction: column;
 
@@ -49,11 +49,13 @@
 
         //Anchor tab 
         a {
-            color: var(--gray-color); //Variable color from index.css
+            color: var(--black-color); //Variable color from index.css
             text-decoration: none;
             flex-direction: column;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: large;
+            
 
             transition: all 0.3s ease-in-out;
 
@@ -71,8 +73,8 @@
         }
     }
     //Triggers specific menu for certain screens 
-    @media screen and (max-width: 900px){
-        diplay: none;
+    @media screen and (max-width: 900px) {
+        display: none;
     }
 }
 
@@ -96,9 +98,9 @@
         position: fixed;
         top: 0;
         bottom: 0;
-        right: 0;
+        right: -0.1%;
         z-index: 5;
-        padding: 1rem;
+        padding: 1.5rem;
         width: 80%;
         height: 100vh;
         display: flex;
@@ -113,8 +115,8 @@
         box-shadow: 0 0 2Opx rgba(168, 168, 168, 0.15);
 
         svg {
-            width: 35%;
-            height: 35%;
+            width: 10%;
+            height: 10%;
             color: var(--secondary-color);
             margin: 0.5rem 1rem
         }
@@ -135,9 +137,9 @@
                 margin: 1rem;
 
                 a{
-                    color: var(--gray-color);
+                    color: var(--black-color);
                     text-decoration: none;
-                    font-size: 1rem;
+                    font-size: 3rem;
                     text-transform: uppercase;
                     font-weight: 500;
                     transition: all 0.3s ease-in-out;
