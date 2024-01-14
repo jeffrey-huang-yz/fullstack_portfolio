@@ -59,6 +59,9 @@
     align-items: flex-end;
     flex-direction: column;
 
+    .head-text{
+        color: var(--secondary-color);
+    }
     .badge-cmp, .tag-cmp {
         padding: 1rem 2rem;
         border: var(--white-color);
@@ -95,7 +98,7 @@
     .tag-cmp {
         flex-direction: column;
         margin-top: 3rem;
-
+        
         .p-text {
             visibility: hidden;
             width: 100%;
@@ -122,7 +125,7 @@
             text-transform: uppercase;
             text-align: right;
             overflow: hidden; 
-            border-right: .15em solid orange; 
+            border-right: .15em solid var(--secondary-color); 
             white-space: nowrap; 
             margin: 0 auto; 
             letter-spacing: .02em; 
@@ -144,7 +147,7 @@
         /* The typewriter cursor effect */
         @keyframes blink-caret {
             from, to { border-color: transparent }
-            50% { border-color: orange; }
+            50% { border-color: var(--secondary-color); }
         }
         @keyframes visible {
             to {visibility: visible;}
@@ -208,6 +211,7 @@
         height: 70px;
         
     }
+   
 
     @media screen and (min-width: 2000px) {
         div:nth-child(1) {
@@ -227,6 +231,7 @@
             height: 200px;
             
         }
+       
     }
 
     @media screen and (max-width: 1200px) {
