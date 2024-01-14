@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {useState, useEffect} from 'react';
 import {motion} from 'framer-motion';
 import './About.scss';
@@ -47,16 +46,3 @@ const About = () => {
 }
 
 export default AppWrap(About, 'about');
-=======
-import React from 'react'
-
-import './About.scss';
-
-const About = () => {
-  return (
-    <div>About</div>
-  )
-}
-
-export default About
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02

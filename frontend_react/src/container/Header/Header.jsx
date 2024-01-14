@@ -1,11 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion';
 import {images} from '../../constants';
-<<<<<<< HEAD
 import {AppWrap} from '../../wrapper';
-=======
-
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
 
 import './Header.scss';
 
@@ -36,11 +32,7 @@ const Header = () => {
                     Hello, I'm
                   </p>
                   <h1 className='head-text'>
-<<<<<<< HEAD
                     Jeffrey Huang
-=======
-                    Jeffrey
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
                   </h1>
                 </div>
               </div>
@@ -72,7 +64,6 @@ const Header = () => {
       <motion.div
         variant={scaleVariants}
         whileInView = {scaleVariants.whileInView}
-<<<<<<< HEAD
         className = "app__header-circles"
         >
 
@@ -80,13 +71,6 @@ const Header = () => {
             <div className="circle-cmp app__flex" key={`circle-${index}`}>
               <img src={circle} alt="circle" />
               
-=======
-        className = "app__header-circles">
-
-          {[images.flutter, images.redux, images.sass].map((circle, index) => (
-            <div className="circle-cmp app__flex" key={`circle-${index}`}>
-              <img src={circle} alt="circle" />
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
             </div>
           ))}
       </motion.div>
@@ -95,8 +79,4 @@ const Header = () => {
   )
 }
 
-<<<<<<< HEAD
 export default AppWrap(Header, 'home');
-=======
-export default Header
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02

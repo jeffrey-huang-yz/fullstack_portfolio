@@ -59,12 +59,9 @@
     align-items: flex-end;
     flex-direction: column;
 
-<<<<<<< HEAD
     .head-text{
         color: var(--secondary-color);
     }
-=======
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
     .badge-cmp, .tag-cmp {
         padding: 1rem 2rem;
         border: var(--white-color);
@@ -101,11 +98,7 @@
     .tag-cmp {
         flex-direction: column;
         margin-top: 3rem;
-<<<<<<< HEAD
         
-=======
-
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
         .p-text {
             visibility: hidden;
             width: 100%;
@@ -132,11 +125,7 @@
             text-transform: uppercase;
             text-align: right;
             overflow: hidden; 
-<<<<<<< HEAD
             border-right: .15em solid var(--secondary-color); 
-=======
-            border-right: .15em solid orange; 
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
             white-space: nowrap; 
             margin: 0 auto; 
             letter-spacing: .02em; 
@@ -158,11 +147,7 @@
         /* The typewriter cursor effect */
         @keyframes blink-caret {
             from, to { border-color: transparent }
-<<<<<<< HEAD
             50% { border-color: var(--secondary-color); }
-=======
-            50% { border-color: orange; }
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
         }
         @keyframes visible {
             to {visibility: visible;}
@@ -226,10 +211,7 @@
         height: 70px;
         
     }
-<<<<<<< HEAD
    
-=======
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
 
     @media screen and (min-width: 2000px) {
         div:nth-child(1) {
@@ -249,10 +231,7 @@
             height: 200px;
             
         }
-<<<<<<< HEAD
        
-=======
->>>>>>> efd872de8370cde6d6695ff0eb9483851c4cbc02
     }
 
     @media screen and (max-width: 1200px) {
