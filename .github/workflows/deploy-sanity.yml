@@ -23,5 +23,5 @@ jobs:
           key: node-modules-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
         run: npm install
-      - name: Deploy 
+      - name: Deploy Studio
         run: npm run deploy
