@@ -1,11 +1,9 @@
-
 {
   "name": "package-name",
   "version": "1.0.0",
   "description": "package description",
   "scripts": {
-    "start": "sanity start",
-    "deploy": "sanity deploy",
+    "deploy": "node --version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
