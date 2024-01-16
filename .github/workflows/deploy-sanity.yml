@@ -23,5 +23,15 @@ jobs:
           key: node-modules-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
         run: npm install
+<<<<<<< HEAD:.github/workflows/main.yml
       - name: Deploy Studio
-        run: npm run deployx
+        run: npm run deploy
+=======
+
+      - name: Build and deploy
+        run: npm run deploy
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}  # Set the Sanity auth token as an environment variable
+          BRANCH: gh-pages  # Set the branch name for GitHub Pages
+          FOLDER: public  # Set the folder name for the built Sanity Studio
+>>>>>>> 6edbe992c0c2d8cf805adf53c382bf0609e92db1:.github/workflows/deploy-sanity.yml
