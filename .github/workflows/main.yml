@@ -1,28 +1,27 @@
-name: Deploy Sanity Studio to GitHub Pages
+name: Deploy sanity studio
 on:
   push:
-    branches:
-      - main  # Set a branch name to trigger the workflow
-
+    branches: [main]
 jobs:
   deploy:
+    name: Build and deploy
     runs-on: ubuntu-latest
+    env:
+      SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOY_TOKEN }}
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # Fetch the entire history to ensure the schema is up-to-date
-
-      - name: Use Node.js
-        uses: actions/setup-node@v2
+          fetch-depth: 2
+      - uses: actions/setup-node@v2
         with:
-          node-version: 16.x
-
+          node-version: "16.x"
+      - name: Restore cached Node Modules 💾
+        id: cache-node-modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
         run: npm install
-
-      - name: Build and deploy
+      - name: Deploy Studio
         run: npm run deploy
-        env:
-          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}  # Set the Sanity auth token as an environment variable
-          BRANCH: gh-pages  # Set the branch name for GitHub Pages
-          FOLDER: public  # Set the folder name for the built Sanity Studio
