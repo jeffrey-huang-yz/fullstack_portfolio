@@ -23,7 +23,5 @@ jobs:
           key: node-modules-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
         run: npm install
-      - name: change directory
-        run: cd frontend_react
       - name: Deploy 
         run: npm run deploy
