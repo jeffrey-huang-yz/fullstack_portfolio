@@ -17,9 +17,9 @@ const Navbar = () => {
         {/*Dynamic block of code and array to loop through all nav bar assets*/} 
         {/*Call map for instant return function*/} 
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => ( 
-          <li className = "app__flex p-text" key={`link-${item}`}>  {/*Centers link text and makes it paragraph text*/} 
+          <li className = "app__flex p-text" key={`ssssssssslink-${item}`}>  {/*Centers link text and makes it paragraph text*/} 
             
-            <a href={'#${item}'}> {/*Links for each navbar item*/} 
+            <a href={`#${item}`}> {/*Links for each navbar item*/} 
             {item}</a>
             <div />
           </li>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <ul>
                   {['home', 'about', 'work', 'skills', 'contact'].map((item) => ( 
                     <li key={item}>  
-                      <a href={'#${item}'} onClick = {() => setToggle(false)}>
+                      <a href={`#${item}`} onClick = {() => setToggle(false)}>
                       {item}</a>
                     </li>
                   ))}

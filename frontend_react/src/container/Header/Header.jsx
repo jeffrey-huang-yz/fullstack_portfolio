@@ -39,7 +39,7 @@ const Header = () => {
 
               <div className='tag-cmp app__flex'>
                 <p className="p-text">
-                    A Computer Engineering Student at the University of Waterloo
+                  Computer Eng. Student at UWaterloo
                 </p>
 
                 <p className="p-text2">
