@@ -18,7 +18,7 @@ const About = () => {
   return (
     <>
       <div className='app__profiles-text'>
-        <h2 className='head-text'>I Know That <span>Good Development</span> <br /> means <span>Sustainability and Iteration.</span></h2>
+        <h2 className='head-text'>Passionate about writing <span>clean, efficient code</span> <br /> and <span>crafting software solutions that drive innovation.</span></h2>
       </div>
       
 
